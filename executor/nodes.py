@@ -41,7 +41,7 @@ class BaseNode:
 class TelegramReceiveMessageNode(BaseNode):
     def __call__(self, state:FlexibleState):
         print("TelegramReceiveMessageNode called")
-        state["data"] = self.state.get("data").get("text")
+        state["data"] = state.get("data").get("text")
         return state
     
 class APITriggerNode(BaseNode):
