@@ -15,7 +15,7 @@ from executor.nodes import (
 from langgraph.graph import StateGraph, START , END
 
 NODE_TYPES = {
-    "TelegramReceiveMessage": "TelegramReceiveMessageNode",
+    "TelegramRecieveMessage": "TelegramReceiveMessageNode",
     "APITrigger": "APITriggerNode",
     "TelegramSendMessage": "TelegramSendMessageNode",
     "AskGPT": "AskGPTNode",
